@@ -181,19 +181,7 @@ color: white;
 <a href="#projects" class="px-6 py-3 border border-gray-200 rounded-button hover:border-primary hover:text-primary transition-colors cursor-pointer whitespace-nowrap hover-scale">View Projects</a>
 </div>
 </div>
-<div class="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl animate-fade-in relative group cursor-pointer" style="animation-delay: 0.9s">
-</label>
-</div>
 <script>
-document.getElementById('profileImageInput').addEventListener('change', function(e) {
-if (e.target.files && e.target.files[0]) {
-const reader = new FileReader();
-reader.onload = function(e) {
-document.getElementById('profileImage').src = e.target.result;
-};
-reader.readAsDataURL(e.target.files[0]);
-}
-});
 </script>
 </div>
 </section>
