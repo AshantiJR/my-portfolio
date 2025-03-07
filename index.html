@@ -512,17 +512,6 @@ filterButtons.forEach(btn => btn.classList.remove('filter-active'));
 button.classList.add('filter-active');
 renderProjects(button.textContent);
 });
-});
-const themeToggle = document.getElementById('themeToggle');
-themeToggle.addEventListener('click', () => {
-const icon = themeToggle.querySelector('i');
-if (icon.classList.contains('ri-sun-line')) {
-icon.classList.replace('ri-sun-line', 'ri-moon-line');
-document.body.style.backgroundColor = '#121212';
-document.body.style.color = '#F5E6CA';
-document.querySelectorAll('.bg-slate').forEach(el => {
-el.style.backgroundColor = '#2A2A2A';
-});
 document.querySelectorAll('.text-gray-400').forEach(el => {
 el.style.color = '#9CA3AF';
 });
